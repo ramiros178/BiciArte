@@ -1,0 +1,305 @@
+@import url("https://fonts.googleapis.com/css2?family=Macondo&family=Poppins:ital,wght@0,300;0,800;1,500&family=Rubik:wght@300;400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins" sans-serif;
+}
+
+.logo img {
+  width: 350px;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  background: #000428; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #004e92,
+    #000428
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #004e92,
+    #000428
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+a {
+  list-style: none;
+  text-decoration: none;
+}
+.items {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+
+  padding: 20px 20px;
+}
+.items a {
+  font-weight: 500;
+  font-size: 1.7rem;
+  color: white;
+  list-style: none;
+  text-decoration: none;
+  padding: 15px;
+}
+
+.items a:hover {
+  color: aquamarine;
+}
+/**Nav terminado  **/
+/**Section Nosotros  **/
+
+.section-nosotros {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #000428; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to bottom,
+    #004e92,
+    #000428
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #004e92,
+    #000428
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.description-nosotros {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+.description-nosotros h1 {
+  color: aquamarine;
+  font-size: 2.8rem;
+  margin-top: 10px;
+
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.description-nosotros p {
+  text-align: center;
+
+  font-size: 1.5rem;
+  /* margin: 0 auto; */
+  padding: 20px 20px;
+}
+
+.img-nosotros {
+  width: 100%;
+  height: 100%;
+}
+
+/* seccion Nosotros terminado */
+/* Section Bicis */
+
+.product-bicis {
+  padding: 6rem 0;
+}
+
+.product-bicis h2 {
+  text-align: center;
+  font-size: 3rem;
+  color: blue;
+}
+
+.product-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.bicis img {
+  display: flex;
+  justify-content: center;
+  max-width: 400px;
+}
+
+.bicis {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+
+  border-radius: 30px;
+  border: 1px solid black;
+  box-shadow: 0 0 20px 1px;
+  padding: 2rem 0;
+}
+
+.product-name {
+  font-size: 40px;
+  font-style: italic;
+  font-weight: 60px;
+  color: rgb(5, 12, 99);
+}
+
+.product-price {
+  font-size: 40px;
+  color: blueviolet;
+  font-weight: bolder;
+}
+
+.btn-product {
+  font-size: 20px;
+  max-width: 200px;
+  border: 1px solid blue;
+  border-radius: 50px;
+  padding: 20px 20px;
+  color: white;
+  background-color: blue;
+  margin-top: 20px;
+  text-transform: uppercase;
+}
+/*  seccion bici terminado */
+
+/* Footer */
+
+footer {
+  width: 100%;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: #000428; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #004e92,
+    #000428
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #004e92,
+    #000428
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+p {
+  color: white;
+}
+
+.title {
+  margin: 50px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title img {
+  width: 75%;
+}
+
+.registrate {
+  color: rgb(8, 8, 90);
+  border: 1px solid aquamarine;
+  background-color: aquamarine;
+  border-radius: 8px;
+  font-size: 20px;
+  padding: 8px 8px;
+  margin: 60px 0;
+  font-weight: 500;
+}
+
+/* Fin footer */
+
+/* Media Desktop */
+
+@media screen and (min-width: 1024px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .logo img {
+    width: 500px;
+  }
+
+  .items {
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 70px;
+  }
+  /*  Seccion Nosotros */
+
+  .section-nosotros {
+    flex-direction: row;
+
+    max-width: 100%;
+    height: 100%;
+    gap: 50px;
+  }
+
+  .description-nosotros {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .bici-nosotros img {
+    width: 800px;
+    margin: 0 auto;
+  }
+
+  /* Seccion Bicis */
+  .product-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 70px;
+  }
+  /* Footer */
+  footer {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    justify-content: space-around;
+  }
+
+  .horarios {
+    margin: 0 150px 0 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .section-nosotros {
+    flex-direction: row;
+  }
+}
+
+@media screen and(min-width:1200px) {
+  .section-nosotros {
+    flex-direction: row;
+  }
+}
