@@ -302,4 +302,12 @@ p {
   .section-nosotros {
     flex-direction: row;
   }
+
+  .product-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 70px;
+  }
 }
