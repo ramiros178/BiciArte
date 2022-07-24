@@ -40,7 +40,8 @@ a {
 .items {
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   text-align: center;
 
@@ -245,6 +246,7 @@ p {
   }
 
   .items {
+    flex-direction: row;
     justify-content: space-around;
     align-items: center;
     margin: 0 70px;
@@ -293,6 +295,13 @@ p {
 }
 
 @media screen and (min-width: 768px) {
+  .items {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 70px;
+  }
+
   .section-nosotros {
     flex-direction: row;
   }
@@ -301,6 +310,13 @@ p {
 @media screen and(min-width:1200px) {
   .section-nosotros {
     flex-direction: row;
+  }
+
+  .items {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 70px;
   }
 
   .product-container {
